@@ -9,8 +9,31 @@ html {
   border-bottom: 10px solid #b3fbff;
 }
 
+@keyframes text-blur {
+
+  0% {
+    opacity: 0;
+    filter: blur(7px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    filter: none;
+    opacity: 1;
+  }
+
+}
+
 .content {
   top: 10px;
+  animation: text-blur 1s 500ms linear forwards;
+  filter: blur(7px);
+  opacity: 0;
+  transform-origin: left center;
+  text-shadow: 2px 2px #aaa;
 }
 
 h1 {
@@ -40,38 +63,57 @@ p {
 }
 
 .ice-cream {
-  left: -10px;
+  left: 10px;
+}
+
+@keyframes cone-drop {
+
+  0% {
+    transform: translateY(-500px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
 }
 
 .cone {
+  animation: cone-drop 250ms ease forwards;
+  transform: translateY(-500px);
   top: 270px;
   z-index: 100;
   max-width: 9em;
 }
 
 .mint {
+  animation: cone-drop 250ms 250ms ease forwards;
+  transform: translateY(-500px);
   top: 170px;
   z-index: 50;
   max-width: 9em;
-
 }
 
 .chocolate {
+  animation: cone-drop 250ms 500ms ease forwards;
+  transform: translateY(-500px);
   top: 85px;
   left: 70px;
   z-index: 50;
   max-width: 9em;
-
 }
 
 .vanilla {
+  animation: cone-drop 250ms 750ms ease forwards;
+  transform: translateY(-500px);
   top: 15px;
   z-index: 60;
   max-width: 9em;
-
 }
 
 .cherry {
+  animation: cone-drop 250ms 1s ease forwards;
+  transform: translateY(-500px);
   top: -60px;
   z-index: 75;
   max-width: 9em;
@@ -84,7 +126,7 @@ p {
   }
 
   .ice-cream {
-    left: 40px;
+    left: 20px;
   }
 
   .cone {
