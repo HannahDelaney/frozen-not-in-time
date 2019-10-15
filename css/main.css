@@ -1,0 +1,94 @@
+html {
+  font-family: "Fredoka One", sans-serif;
+  color: #c09;
+}
+
+.banner {
+  background-image: repeating-linear-gradient(-30deg, #b3fbff 1%, #c9fcff 2%, #d4fdff 3%);
+  border-top: 10px solid #b3fbff;
+  border-bottom: 10px solid #b3fbff;
+}
+
+.content {
+  top: 10px;
+}
+
+h1 {
+  color: #990073;
+  position: relative;
+  transform: rotate(-10deg);
+}
+
+p {
+  position: relative;
+  transform: rotate(-5deg);
+  max-width: 19em;
+  left: 20px;
+}
+
+.btn-ghost {
+  color: #c09;
+  border: 3px solid #990073;
+  position: relative;
+  left: 30px;
+}
+
+.btn-ghost:hover {
+  background-color: #c09;
+  color: #990073;
+  border: 3px solid #990073;
+}
+
+.ice-cream {
+  left: -10px;
+}
+
+.cone {
+  top: 270px;
+  z-index: 100;
+  max-width: 9em;
+}
+
+.mint {
+  top: 170px;
+  z-index: 50;
+  max-width: 9em;
+
+}
+
+.chocolate {
+  top: 85px;
+  left: 70px;
+  z-index: 50;
+  max-width: 9em;
+
+}
+
+.vanilla {
+  top: 15px;
+  z-index: 60;
+  max-width: 9em;
+
+}
+
+.cherry {
+  top: -60px;
+  z-index: 75;
+  max-width: 9em;
+}
+
+@media only screen and (min-width: 90em) {
+
+  .content {
+    top: -10px;
+  }
+
+  .ice-cream {
+    left: 40px;
+  }
+
+  .cone {
+    top: 280px;
+  }
+
+}
